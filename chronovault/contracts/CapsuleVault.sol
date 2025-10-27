@@ -21,7 +21,7 @@ contract CapsuleVault is ERC721, Ownable {
 
     event CapsuleCreated(uint256 indexed id, address indexed owner, uint256 unlockTime);
     event CapsuleUnlocked(uint256 indexed id, string ipfsHash);
-    event CapsuleTransferred(uint256 indexed id, address indexed from, address indexed to);
+   
 
     constructor() ERC721("ChronoVault Capsule", "CVC") Ownable(msg.sender) {}
 
